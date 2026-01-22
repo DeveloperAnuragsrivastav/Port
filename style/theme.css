@@ -970,3 +970,702 @@ section.visible {
   transform-style: preserve-3d;
   max-width: 80px;
 }
+
+
+/* ========================================
+   MOBILE RESPONSIVE FIXES
+   ======================================== */
+
+/* Extra Small Devices (phones, 576px and below) */
+@media (max-width: 576px) {
+  /* Hero Section */
+  .hero-heading {
+    font-size: 1.75rem !important;
+    padding: 0 !important;
+  }
+  
+  .hero-title {
+    padding: 0 1rem !important;
+    width: 100%;
+  }
+  
+  .hero-title h1 {
+    padding: 0 !important;
+  }
+  
+  .hero-subheading {
+    font-size: 0.9rem;
+  }
+  
+  .hero-subtitle {
+    padding: 0 0.5rem;
+  }
+  
+  /* Scroll down indicator */
+  .scroll-down {
+    bottom: 50px;
+  }
+  
+  /* Section Headings */
+  .section-heading {
+    max-width: 95vw !important;
+    padding: 0 1rem;
+  }
+  
+  .section-heading h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  .section-heading p {
+    font-size: 0.875rem;
+  }
+  
+  /* About Section */
+  #about-us .about-us-info {
+    padding: 2rem 0 !important;
+    margin: 1rem 0 !important;
+  }
+  
+  .about-us-content {
+    padding: 2rem 1rem !important;
+  }
+  
+  .about-us-text p {
+    font-size: 0.9rem;
+  }
+  
+  .paragraph-quote {
+    font-size: 1.1rem !important;
+  }
+  
+  /* Counter Section */
+  #counter-section .couunter-container .number-counter {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  #counter-section .couunter-container .number-counter h1 {
+    font-size: 2rem;
+  }
+  
+  #counter-section .couunter-container .number-counter p {
+    font-size: 0.8rem;
+  }
+  
+  /* Technical Expertise Cards */
+  .TI-solution-cards {
+    padding: 1rem 0 !important;
+    margin: 1rem 0 !important;
+  }
+  
+  .card {
+    padding: 25px 15px !important;
+  }
+  
+  .card-img-wrapper {
+    height: 100px;
+  }
+  
+  .solution-title {
+    font-size: 1.1rem !important;
+  }
+  
+  /* Services Accordion */
+  .our-services-according {
+    padding: 0 0.5rem !important;
+  }
+  
+  .accordion-button {
+    font-size: 1rem !important;
+    padding: 15px 5px !important;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .accordion-title {
+    font-size: 0.9rem;
+  }
+  
+  .accordion-button .accordion-title:nth-child(2) {
+    margin-left: 0.5rem !important;
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .accordion-body-description {
+    width: 100%;
+    padding-left: 10px;
+  }
+  
+  /* Portfolio/Projects Section */
+  .slider-item-content {
+    padding: 15px;
+  }
+  
+  .swiper-heading {
+    font-size: 1rem !important;
+  }
+  
+  .swiper-desc {
+    font-size: 0.85rem !important;
+  }
+  
+  .tech-icon {
+    width: 28px !important;
+    height: 28px !important;
+    padding: 4px;
+  }
+  
+  .tech-logos {
+    gap: 0.5rem !important;
+  }
+  
+  /* Experience Section */
+  .experience-card {
+    padding: 15px !important;
+    min-height: auto;
+  }
+  
+  .experience-header {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 1rem !important;
+  }
+  
+  .experience-img-wrapper {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  
+  .experience-info {
+    text-align: center;
+  }
+  
+  .testimonial-person-name {
+    font-size: 1.1rem;
+  }
+  
+  .testimonial-company-name {
+    font-size: 0.75rem;
+  }
+  
+  .testimonial-message {
+    font-size: 0.85rem !important;
+  }
+  
+  /* Contact Section */
+  #get-in-touch .our-services-according {
+    padding: 0 !important;
+  }
+  
+  .contact-form-container {
+    padding: 1.5rem 1rem !important;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form-container .section-heading {
+    width: 100% !important;
+  }
+  
+  .contact-form-container .section-heading h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .address-container {
+    height: auto;
+    padding: 1rem 0;
+  }
+  
+  .address-desc p {
+    font-size: 0.85rem;
+    word-break: break-word;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 1rem 0 !important;
+  }
+  
+  footer .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  footer .nav .nav-item {
+    font-size: 0.75rem;
+  }
+  
+  /* Navigation */
+  .navbar {
+    padding: 0.5rem 0;
+  }
+  
+  .navbar-collapse {
+    background: rgba(18, 18, 18, 0.95);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .nav-link {
+    padding: 0.75rem 0 !important;
+  }
+  
+  /* Buttons */
+  .btn {
+    font-size: 0.75rem;
+    padding: 8px 16px;
+  }
+  
+  .theme-cta {
+    padding: 8px 16px !important;
+  }
+  
+  /* Show Hire Me button on mobile */
+  .btn.theme-cta.d-none.d-sm-block {
+    display: none !important;
+  }
+}
+
+/* Small Devices (landscape phones, 576px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero-heading {
+    font-size: 2.25rem !important;
+    padding: 0 1rem !important;
+  }
+  
+  .hero-title {
+    padding: 0 1.5rem !important;
+  }
+  
+  .hero-subheading {
+    font-size: 1rem;
+  }
+  
+  .section-heading {
+    max-width: 85vw !important;
+  }
+  
+  .section-heading h3 {
+    font-size: 1.4rem !important;
+  }
+  
+  .paragraph-quote {
+    font-size: 1.2rem !important;
+  }
+  
+  .our-services-according {
+    padding: 0 1rem !important;
+  }
+  
+  .accordion-body-description {
+    width: 90%;
+  }
+  
+  .contact-form-container {
+    margin-bottom: 2rem;
+  }
+  
+  .address-container {
+    height: auto;
+    padding: 1rem 0;
+  }
+}
+
+/* Medium Devices (tablets, 768px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .hero-heading {
+    font-size: 2.75rem !important;
+    padding: 0 2rem !important;
+  }
+  
+  .section-heading {
+    max-width: 75vw !important;
+  }
+  
+  .section-heading h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .our-services-according {
+    padding: 0 2rem !important;
+  }
+  
+  .accordion-body-description {
+    width: 80%;
+  }
+  
+  .contact-form-container {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Counter Section - All mobile sizes */
+@media (max-width: 1199px) {
+  #counter-section .couunter-container {
+    flex-wrap: wrap;
+  }
+  
+  #counter-section .couunter-container .number-counter {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 1.5rem 0.5rem;
+  }
+  
+  #counter-section .couunter-container .number-counter:not(:last-child)::after {
+    display: none;
+  }
+  
+  #counter-section .couunter-container .number-counter:nth-child(odd) {
+    border-right: 1px solid rgba(161, 161, 161, 0.3);
+  }
+  
+  #counter-section .couunter-container .number-counter:nth-child(1),
+  #counter-section .couunter-container .number-counter:nth-child(2) {
+    border-bottom: 1px solid rgba(161, 161, 161, 0.3);
+  }
+}
+
+@media (max-width: 576px) {
+  #counter-section .couunter-container .number-counter {
+    flex: 0 0 100%;
+    max-width: 100%;
+    border-right: none !important;
+  }
+  
+  #counter-section .couunter-container .number-counter:not(:last-child) {
+    border-bottom: 1px solid rgba(161, 161, 161, 0.3);
+  }
+}
+
+/* About Section - Column stacking */
+@media (max-width: 1199px) {
+  #about-us .about-us-info {
+    flex-direction: column;
+  }
+  
+  #about-us .about-us-info .col-xl-6 {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .about-us-img {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .about-us-img img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Contact Section - Column stacking */
+@media (max-width: 1199px) {
+  #get-in-touch .our-services-according .col-xl-6 {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  #get-in-touch .our-services-according .col-xl-6:first-child {
+    margin-bottom: 2rem;
+  }
+  
+  #get-in-touch .section-heading {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Technical Expertise Cards - Better grid on tablets */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .TI-solution-cards .col-xl-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .TI-solution-cards .col-xl-3,
+  .TI-solution-cards .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Swiper/Portfolio adjustments */
+@media (max-width: 768px) {
+  .slider-buttons {
+    margin-top: 3rem;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 25px;
+    scale: 0.5;
+  }
+}
+
+/* Fix row width issues */
+@media (max-width: 768px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .row.w-100 {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+/* Prevent horizontal overflow */
+html, body {
+  overflow-x: hidden;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+/* Mobile navigation improvements */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(18, 18, 18, 0.98);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-nav {
+    padding: 0.5rem 0;
+  }
+  
+  .nav-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+  
+  .nav-link {
+    padding: 1rem 0.5rem !important;
+    display: block;
+  }
+}
+
+/* Add mobile CTA button in navbar */
+@media (max-width: 575px) {
+  .navbar-collapse .navbar-nav {
+    margin-bottom: 1rem;
+  }
+  
+  .navbar-collapse::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+/* Fix image overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better touch targets for mobile */
+@media (max-width: 768px) {
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .nav-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .accordion-button {
+    min-height: 60px;
+  }
+}
+
+/* Fix container padding on mobile */
+@media (max-width: 576px) {
+  .container,
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  .my-5 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+/* ========================================
+   ADDITIONAL MOBILE FIXES
+   ======================================== */
+
+/* Fix contact form section heading width */
+@media (max-width: 768px) {
+  .contact-form-container .section-heading {
+    width: 100% !important;
+  }
+  
+  .contact-form-container .section-heading h3 {
+    font-size: 1.25rem !important;
+    line-height: 1.4;
+  }
+}
+
+/* Fix footer for mobile */
+@media (max-width: 768px) {
+  footer.row {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  footer .col {
+    margin-bottom: 1.5rem;
+  }
+  
+  footer .nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  footer ul {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  footer ul li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Fix accordion text overflow */
+@media (max-width: 576px) {
+  .accordion-button {
+    font-size: 0.9rem !important;
+    word-break: break-word;
+  }
+  
+  .accordion-button .accordion-title:first-child {
+    min-width: 25px;
+  }
+  
+  .accordion-button .accordion-title:nth-child(2) {
+    font-size: 0.85rem;
+    white-space: normal;
+    text-align: left;
+  }
+}
+
+/* Fix Get in Touch info cards on mobile */
+@media (max-width: 1199px) {
+  #get-in-touch .row.w-100.px-0 {
+    margin-top: 1.5rem !important;
+  }
+  
+  .address-container {
+    height: auto !important;
+    min-height: 120px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+  }
+  
+  .address-desc p {
+    word-break: break-all;
+  }
+}
+
+/* Fix email overflow on mobile */
+@media (max-width: 576px) {
+  .address-desc p {
+    font-size: 0.75rem;
+    word-break: break-all;
+  }
+  
+  .address-desc a {
+    font-size: 0.75rem;
+  }
+}
+
+/* Fix Experience carousel on mobile */
+@media (max-width: 768px) {
+  #customers-testimonials .item {
+    padding: 5px;
+    margin-bottom: 40px;
+  }
+  
+  .shadow-effect.experience-card {
+    padding: 15px !important;
+  }
+}
+
+/* Fix Portfolio/Projects slider on mobile */
+@media (max-width: 768px) {
+  .slider-item-content {
+    padding: 12px !important;
+  }
+  
+  .swiper-heading {
+    font-size: 0.95rem !important;
+    white-space: normal !important;
+  }
+  
+  .swiper-desc {
+    font-size: 0.8rem !important;
+    -webkit-line-clamp: 4;
+  }
+}
+
+/* Fix hero section on very small screens */
+@media (max-width: 375px) {
+  .hero-heading {
+    font-size: 1.5rem !important;
+  }
+  
+  .hero-subheading {
+    font-size: 0.8rem;
+  }
+  
+  .section-heading h3 {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Ensure proper row margins */
+.row.w-100 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Fix TI-solution-cards row */
+.TI-solution-cards.row.w-100 {
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
