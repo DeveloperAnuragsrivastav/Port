@@ -1,0 +1,1518 @@
+/* ========================================
+   PROFESSIONAL MOBILE RESPONSIVE CSS
+   Portfolio Website - Anurag Srivastav
+   ======================================== */
+
+/* ========================================
+   BASE RESPONSIVE UTILITIES
+   ======================================== */
+
+/* Prevent horizontal overflow globally */
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Ensure all images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix row width issues causing horizontal scroll */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.w-100 {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* ========================================
+   NAVIGATION - MOBILE RESPONSIVE
+   ======================================== */
+
+/* Mobile Navigation (below 992px) */
+@media (max-width: 991.98px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(18, 18, 18, 0.98);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar-nav {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .nav-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-link {
+    padding: 1rem 0.5rem !important;
+    display: block;
+    font-size: 1rem !important;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-link:hover {
+    letter-spacing: normal;
+  }
+
+  /* Mobile CTA Button */
+  .navbar .btn.theme-cta {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ========================================
+   HERO SECTION - MOBILE RESPONSIVE
+   ======================================== */
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991.98px) {
+  .hero-heading {
+    font-size: 2.5rem !important;
+  }
+
+  .hero-subheading {
+    font-size: 1rem;
+  }
+
+  .hero-title {
+    width: 95%;
+    padding: 0 1rem !important;
+  }
+
+  #hero-section {
+    background-position: center bottom;
+  }
+}
+
+/* Mobile (576px - 767px) */
+@media (max-width: 767.98px) {
+  .hero-heading {
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+
+  .hero-subheading {
+    font-size: 0.95rem;
+  }
+
+  .hero-title {
+    padding: 0 0.75rem !important;
+  }
+
+  .scroll-down {
+    bottom: 60px;
+  }
+
+  .scroll-down .text {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small Mobile (below 576px) */
+@media (max-width: 575.98px) {
+  .hero-heading {
+    font-size: 1.6rem !important;
+    line-height: 1.3;
+    padding: 0 !important;
+  }
+
+  .hero-subheading {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .hero-title {
+    width: 100%;
+    padding: 0 1rem !important;
+  }
+
+  .hero-subtitle {
+    padding: 0 0.5rem;
+  }
+
+  .scroll-down {
+    bottom: 40px;
+  }
+}
+
+/* Extra Small Mobile (360px and below) */
+@media (max-width: 375px) {
+  .hero-heading {
+    font-size: 1.4rem !important;
+  }
+
+  .hero-subheading {
+    font-size: 0.8rem;
+  }
+}
+
+/* ========================================
+   SECTION HEADINGS - MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 991.98px) {
+  .section-heading {
+    max-width: 85% !important;
+    padding: 0 1rem;
+  }
+
+  .section-heading h3 {
+    font-size: 1.5rem !important;
+    line-height: 1.4;
+  }
+
+  .section-heading p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-heading {
+    max-width: 95% !important;
+  }
+
+  .section-heading h3 {
+    font-size: 1.35rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-heading {
+    max-width: 100% !important;
+    padding: 0 0.75rem;
+  }
+
+  .section-heading h3 {
+    font-size: 1.2rem !important;
+    line-height: 1.4;
+  }
+
+  .section-heading p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-heading h3 {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* ========================================
+   ABOUT SECTION - MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 1199.98px) {
+  #about-us .about-us-info {
+    flex-direction: column;
+  }
+
+  #about-us .about-us-info > div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-us-img {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-us-img img {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-us-content.container {
+    padding: 2rem 1rem !important;
+  }
+
+  #about-us .about-us-info {
+    padding: 1.5rem 0 !important;
+    margin: 1rem 0 !important;
+  }
+
+  .about-us-img img {
+    max-width: 85%;
+  }
+
+  .paragraph-quote {
+    font-size: 1.15rem !important;
+    line-height: 1.5;
+  }
+
+  .about-us-text p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-us-content.container {
+    padding: 1.5rem 0.75rem !important;
+  }
+
+  .about-us-img img {
+    max-width: 95%;
+  }
+
+  .paragraph-quote {
+    font-size: 1.05rem !important;
+  }
+
+  .about-us-text p {
+    font-size: 0.85rem;
+  }
+
+  .about-us-cta {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .about-us-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ========================================
+   COUNTER SECTION - MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 1199.98px) {
+  #counter-section .couunter-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #counter-section .couunter-container .number-counter {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 2rem 1rem;
+    position: relative;
+  }
+
+  /* Remove default after pseudo-element */
+  #counter-section .couunter-container .number-counter:not(:last-child)::after {
+    display: none;
+  }
+
+  /* Add right border for odd items */
+  #counter-section .couunter-container .number-counter:nth-child(odd) {
+    border-right: 1px solid rgba(161, 161, 161, 0.2);
+  }
+
+  /* Add bottom border for first two items */
+  #counter-section .couunter-container .number-counter:nth-child(1),
+  #counter-section .couunter-container .number-counter:nth-child(2) {
+    border-bottom: 1px solid rgba(161, 161, 161, 0.2);
+  }
+}
+
+@media (max-width: 767.98px) {
+  #counter-section .couunter-container .number-counter {
+    padding: 1.5rem 0.75rem;
+  }
+
+  #counter-section .couunter-container .number-counter h1 {
+    font-size: 2.25rem;
+  }
+
+  #counter-section .couunter-container .number-counter p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #counter-section .couunter-container .number-counter {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+    border-right: none !important;
+  }
+
+  #counter-section .couunter-container .number-counter:not(:last-child) {
+    border-bottom: 1px solid rgba(161, 161, 161, 0.2);
+  }
+
+  #counter-section .couunter-container .number-counter h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #counter-section .couunter-container .number-counter p {
+    font-size: 0.8rem;
+  }
+}
+
+/* ========================================
+   TECHNICAL EXPERTISE CARDS - MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 1199.98px) {
+  .TI-solution-cards {
+    padding: 1.5rem 0 !important;
+  }
+
+  .TI-solution-cards .col-xl-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .TI-solution-cards {
+    padding: 1rem 0 !important;
+    margin: 1rem 0 !important;
+  }
+
+  .TI-solution-cards .col-xl-3,
+  .TI-solution-cards .col-lg-6,
+  .TI-solution-cards .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 0.75rem;
+  }
+
+  .card {
+    padding: 1.5rem 1.25rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .card-img-wrapper {
+    height: 140px;
+  }
+
+  .solution-title {
+    font-size: 1.15rem !important;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .card hr {
+    margin: 1rem 0 !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .TI-solution-cards .col-xl-3,
+  .TI-solution-cards .col-lg-6,
+  .TI-solution-cards .col-sm-6 {
+    padding: 0 0.5rem;
+  }
+
+  .card {
+    padding: 1.25rem 1rem !important;
+  }
+
+  .card-img-wrapper {
+    height: 120px;
+  }
+
+  .solution-title {
+    font-size: 1.1rem !important;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+}
+
+/* ========================================
+   SERVICES ACCORDION - MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 991.98px) {
+  .our-services-according {
+    padding: 0 1.5rem !important;
+  }
+
+  .accordion-body-description {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .our-services-according {
+    padding: 0 0.75rem !important;
+  }
+
+  .accordion-button {
+    font-size: 1rem !important;
+    padding: 1rem 0.75rem !important;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .accordion-button .accordion-title:first-child {
+    min-width: 30px;
+    flex-shrink: 0;
+  }
+
+  .accordion-button .accordion-title:nth-child(2) {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .accordion-body-description {
+    width: 100%;
+    padding-left: 0.75rem;
+    border-left-width: 2px;
+  }
+
+  .accordion-body {
+    padding: 1rem 0.5rem !important;
+  }
+
+  /* Horizontal scroll images */
+  .accordion-horizontal-scroll {
+    gap: 0.75rem;
+  }
+
+  .accordion-horizontal-scroll img {
+    max-width: 150px;
+    height: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .our-services-according {
+    padding: 0 0.5rem !important;
+  }
+
+  .accordion-button {
+    font-size: 0.9rem !important;
+    padding: 0.875rem 0.5rem !important;
+    min-height: 56px;
+  }
+
+  .accordion-button .accordion-title:nth-child(2) {
+    font-size: 0.85rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .accordion-body-description {
+    padding-left: 0.5rem;
+  }
+
+  .accordion-body-description p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+}
+
+/* ========================================
+   PORTFOLIO/PROJECTS SWIPER - MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 991.98px) {
+  .slider-item-content {
+    padding: 1.5rem;
+  }
+
+  .swiper-heading {
+    font-size: 1.25rem !important;
+  }
+
+  .tech-icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .slider-item-content {
+    padding: 1rem;
+  }
+
+  .swiper-heading {
+    font-size: 1.1rem !important;
+    white-space: normal !important;
+    line-height: 1.4;
+  }
+
+  .swiper-desc {
+    font-size: 0.85rem !important;
+    line-height: 1.5;
+    -webkit-line-clamp: 4;
+  }
+
+  .tech-icon {
+    width: 32px !important;
+    height: 32px !important;
+    padding: 5px;
+  }
+
+  .tech-logos {
+    gap: 0.5rem !important;
+  }
+
+  .slider-buttons {
+    margin-top: 2.5rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 28px;
+    scale: 0.55;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .slider-item-content {
+    padding: 0.75rem;
+  }
+
+  .swiper-heading {
+    font-size: 1rem !important;
+  }
+
+  .swiper-desc {
+    font-size: 0.8rem !important;
+    -webkit-line-clamp: 3;
+  }
+
+  .tech-icon {
+    width: 28px !important;
+    height: 28px !important;
+    padding: 4px;
+  }
+
+  .slider-buttons {
+    margin-top: 2rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 24px;
+    scale: 0.5;
+  }
+}
+
+/* ========================================
+   EXPERIENCE CAROUSEL - MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 991.98px) {
+  .experience-card {
+    padding: 1.25rem !important;
+    min-height: auto;
+  }
+
+  .experience-img-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .testimonial-person-name {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #customers-testimonials .item {
+    padding: 0.5rem;
+    margin-bottom: 50px;
+  }
+
+  .experience-card {
+    padding: 1rem !important;
+  }
+
+  .experience-header {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 0.75rem !important;
+  }
+
+  .experience-img-wrapper {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  .experience-info {
+    text-align: center;
+  }
+
+  .testimonial-person-name {
+    font-size: 1.1rem;
+  }
+
+  .testimonial-company-name {
+    font-size: 0.75rem;
+  }
+
+  .experience-date {
+    font-size: 0.7rem;
+  }
+
+  .testimonial-message {
+    font-size: 0.85rem !important;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #customers-testimonials .item {
+    margin-bottom: 40px;
+  }
+
+  .experience-card {
+    padding: 0.875rem !important;
+  }
+
+  .experience-img-wrapper {
+    width: 55px;
+    height: 55px;
+  }
+
+  .testimonial-person-name {
+    font-size: 1rem;
+  }
+
+  .testimonial-message {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* ========================================
+   CONTACT SECTION - MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 1199.98px) {
+  #get-in-touch .our-services-according {
+    flex-direction: column;
+  }
+
+  #get-in-touch .our-services-according > div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #get-in-touch .col-lg-6:first-child {
+    margin-bottom: 2.5rem;
+  }
+
+  #get-in-touch .section-heading {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #get-in-touch .our-services-according {
+    padding: 0 0.5rem !important;
+  }
+
+  .contact-form-container {
+    padding: 1.5rem 1.25rem !important;
+  }
+
+  .contact-form-container .section-heading {
+    width: 100% !important;
+  }
+
+  .contact-form-container .section-heading h3 {
+    font-size: 1.25rem !important;
+    line-height: 1.4;
+  }
+
+  .form-content {
+    gap: 0.75rem !important;
+  }
+
+  .form-control {
+    padding: 0.875rem 0.75rem !important;
+    font-size: 0.9rem;
+  }
+
+  .contact-cta {
+    margin-top: 1rem;
+  }
+
+  .contact-cta .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.875rem 1.5rem !important;
+  }
+
+  /* Address cards */
+  .address-container {
+    height: auto !important;
+    min-height: 100px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+  }
+
+  .address-title p {
+    font-size: 0.8rem;
+  }
+
+  .address-desc p {
+    font-size: 0.85rem;
+    word-break: break-word;
+  }
+
+  .address-desc a {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #get-in-touch .our-services-according {
+    padding: 0 !important;
+  }
+
+  .contact-form-container {
+    padding: 1.25rem 1rem !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-form-container .section-heading h3 {
+    font-size: 1.15rem !important;
+  }
+
+  .form-control {
+    padding: 0.75rem !important;
+    font-size: 0.85rem;
+  }
+
+  /* Address cards grid */
+  #get-in-touch .row.w-100.px-0 {
+    margin-top: 1rem !important;
+  }
+
+  #get-in-touch .row.w-100.px-0 .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0.25rem;
+  }
+
+  .address-container {
+    min-height: 110px;
+    padding: 0.75rem;
+  }
+
+  .address-desc p,
+  .address-desc a {
+    font-size: 0.75rem;
+    word-break: break-all;
+  }
+
+  .flag img,
+  .flag svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact-form-container .section-heading h3 {
+    font-size: 1.05rem !important;
+  }
+
+  .address-desc p,
+  .address-desc a {
+    font-size: 0.7rem;
+  }
+}
+
+/* ========================================
+   FOOTER - MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 991.98px) {
+  footer.row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer .col {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  footer .col:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  footer ul {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  footer.row {
+    padding: 2rem 1rem !important;
+    margin: 2rem 0 !important;
+  }
+
+  footer .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 1.5rem;
+  }
+
+  footer .col:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  footer h5 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem !important;
+  }
+
+  footer .nav-item {
+    margin-bottom: 0.5rem !important;
+  }
+
+  footer .nav-link,
+  footer span.nav-link {
+    font-size: 0.8rem;
+  }
+
+  footer .text-muted {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  footer.row {
+    padding: 1.5rem 0.75rem !important;
+    margin: 1.5rem 0 !important;
+  }
+
+  footer .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 0.5rem;
+  }
+
+  footer .col:nth-child(2) {
+    display: none;
+  }
+
+  footer h5 {
+    font-size: 0.9rem;
+  }
+
+  footer .nav-link,
+  footer span.nav-link {
+    font-size: 0.75rem;
+  }
+}
+
+/* ========================================
+   BUTTONS - MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 767.98px) {
+  .btn {
+    min-height: 48px;
+    min-width: 48px;
+    font-size: 0.85rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .theme-cta {
+    padding: 0.75rem 1.25rem !important;
+  }
+
+  .btn-fill-primary {
+    padding: 0.75rem 1.5rem !important;
+  }
+
+  .theme-cta .arrow-icon,
+  .btn-fill-primary .arrow-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.625rem 1rem;
+  }
+
+  /* Hide desktop hire me button on mobile */
+  .navbar .btn.theme-cta.d-none.d-sm-block {
+    display: none !important;
+  }
+}
+
+/* ========================================
+   SPACING UTILITIES - MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 767.98px) {
+  .py-5 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  .my-5 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .my-5 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .container,
+  .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* ========================================
+   TYPOGRAPHY - MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 767.98px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 0.9rem;
+  }
+
+  h6 {
+    font-size: 0.85rem;
+  }
+}
+
+/* ========================================
+   TOUCH-FRIENDLY IMPROVEMENTS
+   ======================================== */
+
+@media (max-width: 991.98px) {
+  /* Ensure all clickable elements have proper touch targets */
+  a,
+  button,
+  .btn,
+  .nav-link,
+  .accordion-button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Improve touch scrolling */
+  .accordion-horizontal-scroll {
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .accordion-horizontal-scroll > * {
+    scroll-snap-align: start;
+  }
+}
+
+/* ========================================
+   SPECIFIC DEVICE FIXES
+   ======================================== */
+
+/* iPhone SE, iPhone 12 mini (375px) */
+@media (max-width: 375px) {
+  .hero-title h1 {
+    font-size: 1.35rem !important;
+  }
+
+  .section-heading h3 {
+    font-size: 1.05rem !important;
+  }
+
+  .card {
+    padding: 1rem 0.875rem !important;
+  }
+
+  .experience-card {
+    padding: 0.75rem !important;
+  }
+}
+
+/* Small phones (360px) */
+@media (max-width: 360px) {
+  .hero-title h1 {
+    font-size: 1.25rem !important;
+  }
+
+  .hero-subheading {
+    font-size: 0.75rem;
+  }
+
+  .section-heading h3 {
+    font-size: 1rem !important;
+  }
+
+  .card {
+    padding: 0.875rem 0.75rem !important;
+  }
+
+  .solution-title {
+    font-size: 1rem !important;
+  }
+
+  .address-container {
+    min-height: 100px;
+  }
+
+  .address-desc p,
+  .address-desc a {
+    font-size: 0.65rem;
+  }
+}
+
+/* ========================================
+   LANDSCAPE ORIENTATION FIXES
+   ======================================== */
+
+@media (max-height: 500px) and (orientation: landscape) {
+  #hero-section {
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .hero-title {
+    padding-top: 2rem !important;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+  .navbar,
+  .scroll-down,
+  #dustCanvas,
+  .slider-buttons,
+  .owl-dots {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+}
+
+
+/* ========================================
+   SERVICE IMAGES HORIZONTAL SCROLL - MOBILE
+   ======================================== */
+
+.accordion-horizontal-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.accordion-horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.service-img {
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.service-img img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 767.98px) {
+  .service-img img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .accordion-horizontal-scroll {
+    gap: 0.75rem !important;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service-img img {
+    width: 130px;
+    height: 85px;
+  }
+
+  .accordion-horizontal-scroll {
+    gap: 0.5rem !important;
+  }
+}
+
+/* ========================================
+   ADDITIONAL FIXES FOR SPECIFIC ELEMENTS
+   ======================================== */
+
+/* Fix for service description text */
+.service-description {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 767.98px) {
+  .service-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Fix for accordion title spacing on mobile */
+@media (max-width: 767.98px) {
+  .accordion-button .accordion-title.ms-4 {
+    margin-left: 0.75rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .accordion-button .accordion-title.ms-4 {
+    margin-left: 0.5rem !important;
+  }
+
+  .accordion-button .ms-auto svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Fix for IT solution section container */
+.IT-solution-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .IT-solution-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Fix for testimonial section */
+.testimonial-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .testimonial-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Fix for our-services-content container */
+.our-services-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .our-services-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Fix for portfolio section */
+#portfolio .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 767.98px) {
+  #portfolio .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* ========================================
+   OWL CAROUSEL MOBILE FIXES
+   ======================================== */
+
+@media (max-width: 767.98px) {
+  .owl-carousel .owl-item img {
+    max-width: 100%;
+  }
+
+  #customers-testimonials .owl-stage {
+    padding-left: 0 !important;
+  }
+
+  .owl-carousel .owl-nav {
+    display: none;
+  }
+
+  .owl-carousel .owl-dots {
+    margin-top: 1rem;
+  }
+
+  .owl-carousel .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* ========================================
+   SWIPER MOBILE FIXES
+   ======================================== */
+
+@media (max-width: 767.98px) {
+  .swiper-container {
+    padding: 0 10px;
+  }
+
+  .slider-item {
+    border-radius: 8px;
+  }
+
+  .slider-image {
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+/* ========================================
+   FIX FOR CONTACT INFO GRID
+   ======================================== */
+
+#get-in-touch .row.w-100.px-0.mt-4.mt-lg-5.g-3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 575.98px) {
+  #get-in-touch .row.w-100.px-0.mt-4.mt-lg-5.g-3 {
+    margin-left: -0.25rem !important;
+    margin-right: -0.25rem !important;
+  }
+
+  #get-in-touch .row.w-100.px-0.mt-4.mt-lg-5.g-3 > div {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+/* ========================================
+   MOBILE MENU ANIMATION
+   ======================================== */
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-collapse.collapsing {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .navbar-collapse.show {
+    animation: slideDown 0.3s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* ========================================
+   ENSURE PROPER BOX SIZING
+   ======================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ========================================
+   FIX FOR SECTION OVERFLOW
+   ======================================== */
+
+section {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+#about-us,
+#IT-solution,
+#our-services,
+#portfolio,
+#testimonial,
+#get-in-touch {
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* ========================================
+   ACCESSIBILITY IMPROVEMENTS
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
